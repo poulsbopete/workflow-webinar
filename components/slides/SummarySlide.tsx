@@ -35,7 +35,7 @@ const outline = [
 
 export default function SummarySlide() {
   return (
-    <div className="w-full h-full flex flex-col justify-center px-16 py-12 relative overflow-hidden">
+    <div className="w-full h-full flex flex-col items-center justify-center px-16 py-12 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
         backgroundImage: `linear-gradient(rgba(0,119,204,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(0,119,204,0.8) 1px, transparent 1px)`,
@@ -44,7 +44,7 @@ export default function SummarySlide() {
       <div className="absolute top-1/3 right-0 w-96 h-96 rounded-full opacity-8 blur-3xl" style={{ background: "var(--elastic-blue)" }} />
       <div className="absolute bottom-0 left-1/3 w-72 h-72 rounded-full opacity-6 blur-3xl" style={{ background: "var(--elastic-teal)" }} />
 
-      <div className="relative z-10 max-w-5xl w-full">
+      <div className="relative z-10 max-w-5xl w-full mx-auto">
         <div className="animate-fade-up flex items-center gap-3 mb-2">
           <div className="flex items-center gap-1">
             <div className="w-2.5 h-2.5 rounded-full" style={{ background: "#F04E98" }} />

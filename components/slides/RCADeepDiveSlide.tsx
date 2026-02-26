@@ -1,9 +1,9 @@
 export default function RCADeepDiveSlide() {
   return (
-    <div className="w-full h-full flex flex-col justify-center px-16 py-10 relative overflow-hidden">
+    <div className="w-full h-full flex flex-col items-center justify-center px-16 py-10 relative overflow-hidden">
       <div className="absolute top-1/4 right-0 w-72 h-72 rounded-full opacity-6 blur-3xl" style={{ background: "var(--elastic-pink)" }} />
 
-      <div className="max-w-5xl w-full">
+      <div className="max-w-5xl w-full mx-auto">
         <div className="animate-fade-up flex items-center gap-3 mb-3">
           <div className="px-3 py-1 rounded-full text-xs font-semibold" style={{ background: "rgba(240,78,152,0.15)", color: "var(--elastic-pink)", border: "1px solid rgba(240,78,152,0.3)" }}>
             Demo 1 · Deep Dive

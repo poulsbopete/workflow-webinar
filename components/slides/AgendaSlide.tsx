@@ -33,15 +33,16 @@ const items = [
 
 export default function AgendaSlide() {
   return (
-    <div className="w-full h-full flex flex-col justify-center px-16 py-12 relative overflow-hidden">
+    <div className="w-full h-full flex flex-col items-center justify-center px-16 py-12 relative overflow-hidden">
       <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full opacity-5 blur-3xl -translate-y-1/2" style={{ background: "var(--elastic-blue)" }} />
 
+      <div className="max-w-5xl w-full mx-auto">
       <div className="animate-fade-up mb-10">
         <div className="text-white/40 text-xs font-semibold tracking-widest uppercase mb-2">Today&apos;s Webinar</div>
         <h2 className="text-5xl font-bold text-white">Agenda</h2>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 max-w-5xl">
+      <div className="grid grid-cols-2 gap-4">
         {items.map((item, i) => {
           const Icon = item.icon;
           return (
@@ -65,6 +66,7 @@ export default function AgendaSlide() {
             </div>
           );
         })}
+      </div>
       </div>
     </div>
   );

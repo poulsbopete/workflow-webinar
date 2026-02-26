@@ -76,10 +76,10 @@ const sloTypes = [
 
 export default function SLOWorkflowSlide() {
   return (
-    <div className="w-full h-full flex flex-col justify-center px-16 py-10 relative overflow-hidden">
+    <div className="w-full h-full flex flex-col items-center justify-center px-16 py-10 relative overflow-hidden">
       <div className="absolute bottom-1/4 left-0 w-80 h-80 rounded-full opacity-6 blur-3xl" style={{ background: "var(--elastic-teal)" }} />
 
-      <div className="max-w-5xl w-full">
+      <div className="max-w-5xl w-full mx-auto">
         <div className="animate-fade-up flex items-center gap-3 mb-3">
           <div className="px-3 py-1 rounded-full text-xs font-semibold" style={{ background: "rgba(0,191,179,0.15)", color: "var(--elastic-teal)", border: "1px solid rgba(0,191,179,0.3)" }}>
             Demo 2

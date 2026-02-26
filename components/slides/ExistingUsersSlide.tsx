@@ -39,10 +39,10 @@ const quickStart = [
 
 export default function ExistingUsersSlide() {
   return (
-    <div className="w-full h-full flex flex-col justify-center px-16 py-10 relative overflow-hidden">
+    <div className="w-full h-full flex flex-col items-center justify-center px-16 py-10 relative overflow-hidden">
       <div className="absolute bottom-0 right-1/4 w-80 h-80 rounded-full opacity-6 blur-3xl" style={{ background: "var(--elastic-blue)" }} />
 
-      <div className="max-w-5xl w-full">
+      <div className="max-w-5xl w-full mx-auto">
         <div className="animate-fade-up mb-2">
           <div className="text-white/40 text-xs font-semibold tracking-widest uppercase">For Existing Elastic Users</div>
         </div>

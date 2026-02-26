@@ -14,10 +14,10 @@ const steps = [
 
 export default function WhatAreWorkflowsSlide() {
   return (
-    <div className="w-full h-full flex flex-col justify-center px-16 py-12 relative overflow-hidden">
+    <div className="w-full h-full flex flex-col items-center justify-center px-16 py-12 relative overflow-hidden">
       <div className="absolute bottom-0 left-1/2 w-[600px] h-64 rounded-full opacity-8 blur-3xl -translate-x-1/2" style={{ background: "var(--elastic-blue)" }} />
 
-      <div className="max-w-5xl w-full">
+      <div className="max-w-5xl w-full mx-auto">
         <div className="animate-fade-up mb-2">
           <div className="text-white/40 text-xs font-semibold tracking-widest uppercase">Introduction</div>
         </div>
