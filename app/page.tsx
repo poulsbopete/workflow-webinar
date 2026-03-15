@@ -15,6 +15,7 @@ import SLOWorkflowSlide from "@/components/slides/SLOWorkflowSlide";
 import SLODeepDiveSlide from "@/components/slides/SLODeepDiveSlide";
 import ExistingUsersSlide from "@/components/slides/ExistingUsersSlide";
 import SummarySlide from "@/components/slides/SummarySlide";
+import SeattleMeetupSlide from "@/components/slides/SeattleMeetupSlide";
 
 const slides = [
   { component: TitleSlide, label: "Title" },
@@ -30,6 +31,7 @@ const slides = [
   { component: SLODeepDiveSlide, label: "SLO Deep Dive" },
   { component: ExistingUsersSlide, label: "For Elastic Users" },
   { component: SummarySlide, label: "Summary" },
+  { component: SeattleMeetupSlide, label: "Seattle Meetup" },
 ];
 
 export default function Presentation() {
