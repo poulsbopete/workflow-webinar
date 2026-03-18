@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, Circle } from "lucide-react";
 import TitleSlide from "@/components/slides/TitleSlide";
+import AboutSpeakerSlide from "@/components/slides/AboutSpeakerSlide";
 import AgendaSlide from "@/components/slides/AgendaSlide";
 import WhatAreWorkflowsSlide from "@/components/slides/WhatAreWorkflowsSlide";
 import KeyAdvantagesSlide from "@/components/slides/KeyAdvantagesSlide";
@@ -19,6 +20,7 @@ import SeattleMeetupSlide from "@/components/slides/SeattleMeetupSlide";
 
 const slides = [
   { component: TitleSlide, label: "Title" },
+  { component: AboutSpeakerSlide, label: "About Speaker" },
   { component: AgendaSlide, label: "Agenda" },
   { component: WhatAreWorkflowsSlide, label: "What are Workflows" },
   { component: KeyAdvantagesSlide, label: "Key Advantages" },
@@ -31,7 +33,7 @@ const slides = [
   { component: SLODeepDiveSlide, label: "SLO Deep Dive" },
   { component: ExistingUsersSlide, label: "For Elastic Users" },
   { component: SummarySlide, label: "Summary" },
-  { component: SeattleMeetupSlide, label: "Seattle Meetup" },
+  { component: SeattleMeetupSlide, label: "Cisco Lunch and Learn" },
 ];
 
 export default function Presentation() {

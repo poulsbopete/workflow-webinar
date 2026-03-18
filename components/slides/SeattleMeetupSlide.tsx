@@ -1,4 +1,4 @@
-import { Calendar, MapPin, ExternalLink, MonitorPlay } from "lucide-react";
+import { Calendar, Users, MonitorPlay, Target, CheckCircle2, ExternalLink } from "lucide-react";
 
 export default function SeattleMeetupSlide() {
   return (
@@ -18,14 +18,14 @@ export default function SeattleMeetupSlide() {
             <div className="w-2.5 h-2.5 rounded-full" style={{ background: "#00BFB3" }} />
             <div className="w-2.5 h-2.5 rounded-full" style={{ background: "#0077CC" }} />
           </div>
-          <span className="text-white/40 text-xs font-semibold tracking-widest uppercase">Join Us In Person</span>
+          <span className="text-white/40 text-xs font-semibold tracking-widest uppercase">Lunch &amp; Learn</span>
         </div>
 
         <h2 className="animate-fade-up text-5xl font-bold text-white mb-2">
-          Elastic Seattle User Group
+          Cisco Lunch and Learn
         </h2>
         <p className="animate-fade-up-delay-1 text-xl mb-8" style={{ color: "var(--elastic-teal)" }}>
-          Real-Time Data to AI Workflows: Kafka, Elasticsearch &amp; Observability in Action
+          O11Y Workflows · End-to-End Observability &amp; AI in Action
         </p>
 
         <div className="grid grid-cols-2 gap-6 mb-6">
@@ -36,87 +36,76 @@ export default function SeattleMeetupSlide() {
                 <Calendar size={18} style={{ color: "var(--elastic-blue)" }} />
               </div>
               <div>
-                <div className="text-white font-semibold mb-0.5">Monday, March 16, 2026</div>
-                <div className="text-white/50 text-sm">4:30 PM – 6:30 PM PDT</div>
-                <div className="text-white/40 text-xs mt-1">Talk at 5:45 PM · AI-powered Workflows using Elastic O11Y</div>
+                <div className="text-white font-semibold mb-0.5">Thursday, March 19, 2026</div>
+                <div className="text-white/50 text-sm">11:00 AM (America/Chicago)</div>
+                <div className="text-white/40 text-xs mt-1">40-minute hands-on workshop</div>
               </div>
             </div>
 
             <div className="flex items-start gap-3">
               <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: "rgba(0,191,179,0.2)", border: "1px solid rgba(0,191,179,0.4)" }}>
-                <MapPin size={18} style={{ color: "var(--elastic-teal)" }} />
+                <Users size={18} style={{ color: "var(--elastic-teal)" }} />
               </div>
               <div>
-                <div className="text-white font-semibold mb-0.5">AWS Skills Center</div>
-                <div className="text-white/50 text-sm">1007 Stewart St, 2nd Floor</div>
-                <div className="text-white/50 text-sm">Seattle, WA 98101</div>
+                <div className="text-white font-semibold mb-0.5">Audience</div>
+                <div className="text-white/50 text-sm">Cisco · Technical practitioners, architects, and decision-makers evaluating Elastic for modern observability and AI-enhanced operations</div>
               </div>
-            </div>
-
-            <div className="pt-3 border-t border-white/8">
-              <a
-                href="https://www.meetup.com/elastic-seattle-user-group/events/313065503/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 hover:opacity-80"
-                style={{ background: "rgba(0,119,204,0.2)", border: "1px solid rgba(0,119,204,0.4)", color: "var(--elastic-blue)" }}
-              >
-                <ExternalLink size={14} />
-                RSVP on Meetup
-              </a>
             </div>
           </div>
 
-          {/* Workshop CTA */}
+          {/* Workshop content */}
           <div className="animate-fade-up-delay-3 rounded-xl p-6 flex flex-col" style={{ background: "rgba(0,191,179,0.08)", border: "1px solid rgba(0,191,179,0.3)" }}>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: "rgba(0,191,179,0.2)", border: "1px solid rgba(0,191,179,0.4)" }}>
                 <MonitorPlay size={18} style={{ color: "var(--elastic-teal)" }} />
               </div>
               <div>
-                <div className="text-white font-semibold">Hands-On Workshop</div>
-                <div className="text-white/45 text-xs">Powered by Instruqt</div>
+                <div className="text-white font-semibold">Elastic Launch Demo</div>
+                <div className="text-white/45 text-xs">End-to-End Observability &amp; AI in Action</div>
               </div>
             </div>
 
-            <p className="text-white/60 text-sm leading-relaxed mb-5 flex-1">
-              Follow along with the live demo — build your own AI-powered RCA workflow and SLO automation in a real Elastic environment. No local setup required.
+            <p className="text-white/60 text-sm leading-relaxed mb-4">
+              Deploy a full Elastic observability stack and explore how logs, metrics, traces, and AI-powered insights work together in a realistic, production-style environment.
             </p>
 
-            <div className="space-y-2 mb-5">
+            <div className="space-y-2 mb-4">
+              <div className="text-white/45 text-xs font-semibold uppercase tracking-widest flex items-center gap-2">
+                <Target size={12} style={{ color: "var(--elastic-teal)" }} />
+                What you&apos;ll learn
+              </div>
               {[
-                "Pre-configured Elastic Serverless environment",
-                "Step-by-step guided instructions",
-                "Import the RCA & SLO workflows yourself",
-                "Free to use during and after the event",
+                "How to deploy and run the Elastic Launch Demo environment",
+                "How logs, metrics, and traces correlate within a single Elastic deployment",
+                "How to investigate incidents using unified observability workflows",
+                "How AI capabilities enhance troubleshooting and operational efficiency",
+                "Architectural considerations for scaling observability in production",
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-xs text-white/55">
-                  <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "var(--elastic-teal)" }} />
+                  <CheckCircle2 size={12} className="flex-shrink-0" style={{ color: "var(--elastic-teal)" }} />
                   {item}
                 </div>
               ))}
             </div>
 
             <a
-              href="https://play.instruqt.com/elastic/invite/srtjgvdhxcke"
+              href="https://play.instruqt.com/elastic/invite/suxn4tc8lfiz"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg text-sm font-bold transition-all duration-200 hover:opacity-90 hover:scale-[1.02]"
+              className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg text-sm font-bold transition-all duration-200 hover:opacity-90 hover:scale-[1.02] mt-auto"
               style={{ background: "linear-gradient(135deg, var(--elastic-teal), var(--elastic-blue))", color: "white" }}
             >
-              <MonitorPlay size={16} />
+              <ExternalLink size={16} />
               Start the Workshop
             </a>
           </div>
         </div>
 
-        {/* Co-host callout */}
+        {/* Footer */}
         <div className="animate-fade-up-delay-4 rounded-xl px-5 py-3 flex items-center gap-4" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)" }}>
-          <div className="text-white/30 text-xs">Co-hosted with</div>
-          <div className="w-px h-4 bg-white/10" />
-          <div className="text-white/60 text-sm font-semibold">Seattle Apache Kafka Meetup</div>
-          <div className="w-px h-4 bg-white/10" />
-          <div className="text-white/45 text-xs">Also featuring: <span className="text-white/60">Viktor Gamov, Principal Developer Advocate @ Confluent</span></div>
+          <div className="text-white/45 text-sm">
+            Hands-on workshop: ingest logs, metrics, and traces into Elasticsearch, visualize in Kibana, and explore cross-domain correlation, service maps, distributed tracing, and AI-accelerated root cause analysis.
+          </div>
         </div>
       </div>
     </div>
