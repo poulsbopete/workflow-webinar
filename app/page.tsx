@@ -33,7 +33,7 @@ const slides = [
   { component: SLODeepDiveSlide, label: "SLO Deep Dive" },
   { component: ExistingUsersSlide, label: "For Elastic Users" },
   { component: SummarySlide, label: "Summary" },
-  { component: SeattleMeetupSlide, label: "Cisco Lunch and Learn" },
+  { component: SeattleMeetupSlide, label: "Webinar & workshop" },
 ];
 
 export default function Presentation() {
