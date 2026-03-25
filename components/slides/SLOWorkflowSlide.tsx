@@ -152,6 +152,10 @@ export default function SLOWorkflowSlide() {
             ))}
           </div>
         </div>
+
+        <p className="animate-fade-up-delay-5 mt-4 text-white/35 text-xs text-center">
+          Thanks to <span className="text-white/50">Jen Luther Thomas</span> for webinar structure and intro-to-workflows guidance that shaped how we present this SLO pattern.
+        </p>
       </div>
     </div>
   );
