@@ -4,7 +4,9 @@ import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, Circle } from "lucide-react";
 import TitleSlide from "@/components/slides/TitleSlide";
 import AboutSpeakerSlide from "@/components/slides/AboutSpeakerSlide";
+import ProblemFrameSlide from "@/components/slides/ProblemFrameSlide";
 import AgendaSlide from "@/components/slides/AgendaSlide";
+import WorkflowBuildingBlocksSlide from "@/components/slides/WorkflowBuildingBlocksSlide";
 import WhatAreWorkflowsSlide from "@/components/slides/WhatAreWorkflowsSlide";
 import RCAWorkflowSlide from "@/components/slides/RCAWorkflowSlide";
 import SLOWorkflowSlide from "@/components/slides/SLOWorkflowSlide";
@@ -14,7 +16,9 @@ import SeattleMeetupSlide from "@/components/slides/SeattleMeetupSlide";
 const slides = [
   { component: TitleSlide, label: "Title" },
   { component: AboutSpeakerSlide, label: "About Speaker" },
+  { component: ProblemFrameSlide, label: "Why Workflows" },
   { component: AgendaSlide, label: "Agenda" },
+  { component: WorkflowBuildingBlocksSlide, label: "Building blocks" },
   { component: WhatAreWorkflowsSlide, label: "Workflows" },
   { component: RCAWorkflowSlide, label: "RCA Workflow" },
   { component: SLOWorkflowSlide, label: "SLO Workflow" },

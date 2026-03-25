@@ -33,7 +33,7 @@ export default function TitleSlide() {
           AI-Powered Workflows in Elastic Observability
         </h2>
         <p className="animate-fade-up-delay-3 text-white/50 text-lg max-w-2xl mx-auto leading-relaxed">
-          How Elastic Workflows transforms manual toil into intelligent automation — giving SREs and DevOps teams their time back.
+          Automate tedious, manual, repetitive work — and pair orchestration with Agent Builder so agentic AI fits naturally into how you already run Elastic Observability.
         </p>
 
         <div className="animate-fade-up-delay-4 flex items-center justify-center gap-8 mt-12">

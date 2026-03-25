@@ -1,15 +1,16 @@
-import { Bell, Brain, Cog, Globe, Clock, Layers } from "lucide-react";
+import { Bell, Brain, Cog, Globe, Clock, Layers, Search } from "lucide-react";
 
 const triggers = [
-  { icon: Bell, label: "Alert Fired", color: "var(--elastic-pink)" },
+  { icon: Bell, label: "Alert", color: "var(--elastic-pink)" },
   { icon: Clock, label: "Scheduled", color: "var(--elastic-yellow)" },
   { icon: Globe, label: "Webhook", color: "var(--elastic-teal)" },
 ];
 
 const steps = [
-  { icon: Brain, label: "AI Agent", color: "var(--elastic-blue)" },
+  { icon: Search, label: "ES|QL & data", color: "var(--elastic-blue)" },
+  { icon: Brain, label: "Agent Builder", color: "var(--elastic-blue)" },
   { icon: Cog, label: "Kibana API", color: "var(--elastic-teal)" },
-  { icon: Layers, label: "HTTP Call", color: "var(--elastic-pink)" },
+  { icon: Layers, label: "HTTP / external", color: "var(--elastic-pink)" },
 ];
 
 export default function WhatAreWorkflowsSlide() {
@@ -19,16 +20,16 @@ export default function WhatAreWorkflowsSlide() {
 
       <div className="max-w-5xl w-full mx-auto">
         <div className="animate-fade-up mb-2">
-          <div className="text-white/40 text-xs font-semibold tracking-widest uppercase">Introduction</div>
+          <div className="text-white/40 text-xs font-semibold tracking-widest uppercase">In Elastic</div>
         </div>
-        <h2 className="animate-fade-up text-5xl font-bold text-white mb-3">
-          What are Elastic Workflows?
+        <h2 className="animate-fade-up text-5xl font-bold text-white mb-2">
+          Workflows + Agent Builder
         </h2>
-        <p className="animate-fade-up-delay-1 text-white/60 text-lg mb-10 max-w-3xl">
-          A native automation engine built into Kibana — connecting alerts, AI agents, and APIs into repeatable, auditable processes.
+        <p className="animate-fade-up-delay-1 text-white/60 text-base mb-8 max-w-3xl">
+          Same building blocks you just saw — native in Kibana. Orchestration stays predictable; agents add reasoning where humans used to context-switch.
         </p>
 
-        <div className="animate-fade-up-delay-1 grid grid-cols-3 gap-6 mb-10">
+        <div className="animate-fade-up-delay-1 grid grid-cols-3 gap-6 mb-8">
           <div className="card-glass rounded-xl p-5">
             <div className="text-white/40 text-xs font-semibold tracking-widest uppercase mb-3">Triggers</div>
             <div className="space-y-2">
@@ -45,7 +46,7 @@ export default function WhatAreWorkflowsSlide() {
           </div>
 
           <div className="card-blue rounded-xl p-5">
-            <div className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "var(--elastic-blue)" }}>Step Types</div>
+            <div className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "var(--elastic-blue)" }}>Steps</div>
             <div className="space-y-2">
               {steps.map((s, i) => {
                 const Icon = s.icon;
@@ -60,19 +61,23 @@ export default function WhatAreWorkflowsSlide() {
           </div>
 
           <div className="card-teal rounded-xl p-5">
-            <div className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "var(--elastic-teal)" }}>Defined as</div>
+            <div className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "var(--elastic-teal)" }}>Outputs &amp; ops</div>
             <div className="space-y-2 text-sm text-white/70">
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full" style={{ background: "var(--elastic-teal)" }} />
-                YAML — version controlled
+                Cases, comments, alert links
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full" style={{ background: "var(--elastic-teal)" }} />
-                Liquid templating
+                Slack, webhooks, tickets
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full" style={{ background: "var(--elastic-teal)" }} />
-                Kibana UI or API
+                YAML + Liquid — versioned
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "var(--elastic-teal)" }} />
+                Full execution history per run
               </div>
             </div>
           </div>
@@ -80,9 +85,9 @@ export default function WhatAreWorkflowsSlide() {
 
         <div className="animate-fade-up-delay-2 grid grid-cols-3 gap-4">
           {[
-            { label: "No Code Required", sub: "Define complex automations in readable YAML" },
-            { label: "AI-Native", sub: "Agent Builder integration for intelligent steps" },
-            { label: "Fully Auditable", sub: "Every execution logged with full step history" },
+            { label: "Readable automation", sub: "Complex flows in YAML — not a pile of one-off scripts" },
+            { label: "Agentic AI in the loop", sub: "Agents use your telemetry; Workflows carry the handoffs" },
+            { label: "Built for practitioners", sub: "SREs & platform teams — meet people where they are, then expand" },
           ].map((item, i) => (
             <div key={i} className="flex items-start gap-3">
               <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ background: "var(--elastic-blue)" }} />
