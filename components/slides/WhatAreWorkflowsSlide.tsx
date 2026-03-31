@@ -1,17 +1,4 @@
-import { Bell, Brain, Cog, Globe, Clock, Layers, Search } from "lucide-react";
-
-const triggers = [
-  { icon: Bell, label: "Alert", color: "var(--elastic-pink)" },
-  { icon: Clock, label: "Scheduled", color: "var(--elastic-yellow)" },
-  { icon: Globe, label: "Webhook", color: "var(--elastic-teal)" },
-];
-
-const steps = [
-  { icon: Search, label: "ES|QL & data", color: "var(--elastic-blue)" },
-  { icon: Brain, label: "Agent Builder", color: "var(--elastic-blue)" },
-  { icon: Cog, label: "Kibana API", color: "var(--elastic-teal)" },
-  { icon: Layers, label: "HTTP / external", color: "var(--elastic-pink)" },
-];
+import { GitBranch, Bot, ArrowRight } from "lucide-react";
 
 export default function WhatAreWorkflowsSlide() {
   return (
@@ -20,83 +7,54 @@ export default function WhatAreWorkflowsSlide() {
 
       <div className="max-w-5xl w-full mx-auto">
         <div className="animate-fade-up mb-2">
-          <div className="text-white/40 text-xs font-semibold tracking-widest uppercase">In Elastic</div>
+          <div className="text-white/40 text-xs font-semibold tracking-widest uppercase">Setting the scene</div>
         </div>
-        <h2 className="animate-fade-up text-5xl font-bold text-white mb-2">
-          Workflows + Agent Builder
+        <h2 className="animate-fade-up text-5xl font-bold text-white mb-4">
+          Workflows &amp; Agent Builder
         </h2>
-        <p className="animate-fade-up-delay-1 text-white/60 text-base mb-8 max-w-3xl">
-          Same building blocks you just saw — native in Kibana. Orchestration stays predictable; agents add reasoning where humans used to context-switch.
+        <p className="animate-fade-up-delay-1 text-white/55 text-lg mb-10 max-w-3xl leading-relaxed">
+          They solve different problems — but they&apos;re built to work together. You don&apos;t have to choose between{' '}
+          <span className="text-white/75">rule-based automation</span> and{' '}
+          <span className="text-white/75">agentic AI</span>: one carries the process, the other carries the judgment.
         </p>
 
-        <div className="animate-fade-up-delay-1 grid grid-cols-3 gap-6 mb-8">
-          <div className="card-glass rounded-xl p-5">
-            <div className="text-white/40 text-xs font-semibold tracking-widest uppercase mb-3">Triggers</div>
-            <div className="space-y-2">
-              {triggers.map((t, i) => {
-                const Icon = t.icon;
-                return (
-                  <div key={i} className="flex items-center gap-2">
-                    <Icon size={14} style={{ color: t.color }} />
-                    <span className="text-white/70 text-sm">{t.label}</span>
-                  </div>
-                );
-              })}
+        <div className="animate-fade-up-delay-2 grid grid-cols-2 gap-6 mb-10">
+          <div className="rounded-xl p-8" style={{ background: "rgba(0,119,204,0.1)", border: "1px solid rgba(0,119,204,0.25)" }}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ background: "rgba(0,119,204,0.25)" }}>
+                <GitBranch size={22} style={{ color: "var(--elastic-blue)" }} />
+              </div>
+              <h3 className="text-white text-xl font-semibold">Elastic Workflows</h3>
             </div>
+            <p className="text-white/60 text-sm leading-relaxed mb-4">
+              Orchestration in Kibana: what runs, in what order, when a trigger fires. Think runbooks as code — alerts, schedules, webhooks, API calls, cases, and integrations — with a full execution trail.
+            </p>
+            <p className="text-white/45 text-xs italic">
+              Best when the steps are known and you want consistency every time.
+            </p>
           </div>
 
-          <div className="card-blue rounded-xl p-5">
-            <div className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "var(--elastic-blue)" }}>Steps</div>
-            <div className="space-y-2">
-              {steps.map((s, i) => {
-                const Icon = s.icon;
-                return (
-                  <div key={i} className="flex items-center gap-2">
-                    <Icon size={14} style={{ color: s.color }} />
-                    <span className="text-white/70 text-sm">{s.label}</span>
-                  </div>
-                );
-              })}
+          <div className="rounded-xl p-8" style={{ background: "rgba(240,78,152,0.08)", border: "1px solid rgba(240,78,152,0.25)" }}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{ background: "rgba(240,78,152,0.2)" }}>
+                <Bot size={22} style={{ color: "var(--elastic-pink)" }} />
+              </div>
+              <h3 className="text-white text-xl font-semibold">Agent Builder</h3>
             </div>
-          </div>
-
-          <div className="card-teal rounded-xl p-5">
-            <div className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: "var(--elastic-teal)" }}>Outputs &amp; ops</div>
-            <div className="space-y-2 text-sm text-white/70">
-              <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "var(--elastic-teal)" }} />
-                Cases, comments, alert links
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "var(--elastic-teal)" }} />
-                Slack, webhooks, tickets
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "var(--elastic-teal)" }} />
-                YAML + Liquid — versioned
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "var(--elastic-teal)" }} />
-                Full execution history per run
-              </div>
-            </div>
+            <p className="text-white/60 text-sm leading-relaxed mb-4">
+              AI agents that explore your telemetry and knowledge in natural language — useful when the next step isn&apos;t fixed: investigation, summarization, suggesting queries, working with ES|QL and hybrid search.
+            </p>
+            <p className="text-white/45 text-xs italic">
+              Best when the path depends on what the data says.
+            </p>
           </div>
         </div>
 
-        <div className="animate-fade-up-delay-2 grid grid-cols-3 gap-4">
-          {[
-            { label: "Readable automation", sub: "Complex flows in YAML — not a pile of one-off scripts" },
-            { label: "Agentic AI in the loop", sub: "Agents use your telemetry; Workflows carry the handoffs" },
-            { label: "Built for practitioners", sub: "SREs & platform teams — meet people where they are, then expand" },
-          ].map((item, i) => (
-            <div key={i} className="flex items-start gap-3">
-              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ background: "var(--elastic-blue)" }} />
-              <div>
-                <div className="text-white font-semibold text-sm">{item.label}</div>
-                <div className="text-white/45 text-xs mt-0.5">{item.sub}</div>
-              </div>
-            </div>
-          ))}
+        <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 rounded-xl px-6 py-5" style={{ background: "rgba(0,191,179,0.08)", border: "1px solid rgba(0,191,179,0.25)" }}>
+          <ArrowRight className="hidden sm:block flex-shrink-0 text-white/30" size={20} />
+          <p className="text-white/65 text-sm text-center max-w-2xl leading-relaxed">
+            Together: Workflows <span className="text-white/90">call agents</span> at the right moment in the flow — so you get predictable automation with AI where reasoning actually helps. For YAML, triggers, step types, and data flow, the next slides mirror Elastic&apos;s partner enablement decks.
+          </p>
         </div>
       </div>
     </div>

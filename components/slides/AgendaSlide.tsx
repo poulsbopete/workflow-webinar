@@ -1,40 +1,47 @@
-import { LayoutGrid, Layers, GitBranch, Activity, MonitorPlay } from "lucide-react";
+import { Layers, LayoutList, GitBranch, Activity, MonitorPlay, Library } from "lucide-react";
 
 const items = [
   {
-    icon: LayoutGrid,
+    icon: Layers,
     color: "var(--elastic-blue)",
     cardClass: "card-blue",
-    title: "Simple building blocks",
-    desc: "Triggers → steps (ES|QL, call an agent) → outputs (case, Slack…) — same mental model for every demo",
+    title: "Workflows & Agent Builder",
+    desc: "Set the scene: orchestration vs. agents — how they complement each other before we open the engine",
   },
   {
-    icon: Layers,
+    icon: LayoutList,
     color: "var(--elastic-teal)",
     cardClass: "card-teal",
-    title: "How it maps in Elastic",
-    desc: "Workflows + Agent Builder in Kibana — YAML, Liquid, full execution history",
+    title: "Foundations (enablement slides)",
+    desc: "Triggers, step types, data flow, error handling — same narrative as partner technical enablement",
   },
   {
     icon: GitBranch,
     color: "var(--elastic-pink)",
     cardClass: "card-pink",
-    title: "RCA — what’s possible",
-    desc: "End-to-end field pattern: alert → investigation → documented case",
+    title: "RCA — field pattern",
+    desc: "Alert → investigation → case with Agent Builder in the loop",
   },
   {
     icon: Activity,
     color: "var(--elastic-yellow)",
     cardClass: "",
-    title: "SLO automation — what’s possible",
-    desc: "Scheduled workflows + APIs — reliability without endless manual setup",
+    title: "SLO automation — field pattern",
+    desc: "Scheduled workflows + Observability APIs for reliable coverage",
+  },
+  {
+    icon: Library,
+    color: "var(--elastic-blue)",
+    cardClass: "",
+    title: "Library & resources",
+    desc: "Workflow library, docs, and partner PDF references",
   },
   {
     icon: MonitorPlay,
-    color: "var(--elastic-blue)",
+    color: "var(--elastic-teal)",
     cardClass: "",
     title: "Hands-on lab",
-    desc: "Instruqt · Elastic Autonomous Observability — try it yourself",
+    desc: "Instruqt · Elastic Autonomous Observability",
   },
 ];
 
@@ -47,24 +54,24 @@ export default function AgendaSlide() {
         <div className="animate-fade-up mb-6">
           <div className="text-white/40 text-xs font-semibold tracking-widest uppercase mb-2">Roadmap</div>
           <h2 className="text-5xl font-bold text-white">Agenda</h2>
-          <p className="text-white/45 text-sm mt-2 max-w-2xl">
-            We go from easy-to-grasp pieces to bigger scenarios — with room for organic interruptions and back-and-forth between presenters.
+          <p className="text-white/60 text-sm mt-3 max-w-3xl leading-relaxed">
+            Learn with us how to create rule-based automation and AI Agents to automate routine and complex tasks.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-3">
+        <div className="grid grid-cols-1 gap-2.5">
           {items.map((item, i) => {
             const Icon = item.icon;
             return (
               <div
                 key={i}
-                className={`animate-fade-up-delay-${Math.min(i + 1, 5)} rounded-xl p-4 ${item.cardClass || "card-glass"} flex gap-4 items-center`}
+                className={`animate-fade-up-delay-${Math.min(i + 1, 5)} rounded-xl p-3.5 ${item.cardClass || "card-glass"} flex gap-3 items-center`}
               >
                 <div
-                  className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+                  className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
                   style={{ background: `${item.color}22`, border: `1px solid ${item.color}44` }}
                 >
-                  <Icon size={18} style={{ color: item.color }} />
+                  <Icon size={16} style={{ color: item.color }} />
                 </div>
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2 mb-0.5">

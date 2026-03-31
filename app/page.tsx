@@ -4,25 +4,37 @@ import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, Circle } from "lucide-react";
 import TitleSlide from "@/components/slides/TitleSlide";
 import AboutSpeakerSlide from "@/components/slides/AboutSpeakerSlide";
+import JenAboutSpeakerSlide from "@/components/slides/JenAboutSpeakerSlide";
 import ProblemFrameSlide from "@/components/slides/ProblemFrameSlide";
 import AgendaSlide from "@/components/slides/AgendaSlide";
-import WorkflowBuildingBlocksSlide from "@/components/slides/WorkflowBuildingBlocksSlide";
 import WhatAreWorkflowsSlide from "@/components/slides/WhatAreWorkflowsSlide";
+import WorkflowTriggersSlide from "@/components/slides/WorkflowTriggersSlide";
+import WorkflowStepTypesSlide from "@/components/slides/WorkflowStepTypesSlide";
+import WorkflowDataFlowSlide from "@/components/slides/WorkflowDataFlowSlide";
+import WorkflowErrorHandlingSlide from "@/components/slides/WorkflowErrorHandlingSlide";
+import WorkflowFoundationsBridgeSlide from "@/components/slides/WorkflowFoundationsBridgeSlide";
 import RCAWorkflowSlide from "@/components/slides/RCAWorkflowSlide";
 import SLOWorkflowSlide from "@/components/slides/SLOWorkflowSlide";
 import SummarySlide from "@/components/slides/SummarySlide";
+import WorkflowLibrarySlide from "@/components/slides/WorkflowLibrarySlide";
 import SeattleMeetupSlide from "@/components/slides/SeattleMeetupSlide";
 
 const slides = [
   { component: TitleSlide, label: "Title" },
-  { component: AboutSpeakerSlide, label: "About Speaker" },
+  { component: AboutSpeakerSlide, label: "Peter" },
+  { component: JenAboutSpeakerSlide, label: "Jen" },
   { component: ProblemFrameSlide, label: "Why Workflows" },
   { component: AgendaSlide, label: "Agenda" },
-  { component: WorkflowBuildingBlocksSlide, label: "Building blocks" },
-  { component: WhatAreWorkflowsSlide, label: "Workflows" },
+  { component: WhatAreWorkflowsSlide, label: "Scene" },
+  { component: WorkflowTriggersSlide, label: "Triggers" },
+  { component: WorkflowStepTypesSlide, label: "Step types" },
+  { component: WorkflowDataFlowSlide, label: "Data flow" },
+  { component: WorkflowErrorHandlingSlide, label: "Errors" },
+  { component: WorkflowFoundationsBridgeSlide, label: "To demos" },
   { component: RCAWorkflowSlide, label: "RCA Workflow" },
   { component: SLOWorkflowSlide, label: "SLO Workflow" },
   { component: SummarySlide, label: "Summary" },
+  { component: WorkflowLibrarySlide, label: "Library" },
   { component: SeattleMeetupSlide, label: "Webinar & lab" },
 ];
 
@@ -95,11 +107,11 @@ export default function Presentation() {
         <ChevronRight size={28} />
       </button>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-50 flex gap-1.5 items-center">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-50 flex gap-1.5 items-center max-w-[90vw] flex-wrap justify-center">
         {slides.map((slide, i) => (
           <button
             type="button"
-            key={slide.label}
+            key={slide.label + i}
             onClick={() => goTo(i, i > current ? "next" : "prev")}
             title={slide.label}
             className="transition-all duration-200"
