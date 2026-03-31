@@ -82,7 +82,7 @@ export default function SeattleMeetupSlide() {
               ))}
             </div>
             <a
-              href="https://play.instruqt.com/elastic/invite/kquqehrhox5u"
+              href="https://play.instruqt.com/elastic/invite/xwcuwhhpxfco"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg text-sm font-bold transition-all duration-200 hover:opacity-90 hover:scale-[1.02]"
