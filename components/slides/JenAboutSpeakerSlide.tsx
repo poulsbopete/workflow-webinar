@@ -1,9 +1,9 @@
-import { Briefcase, Sparkles, ExternalLink } from "lucide-react";
+import { Briefcase, Sparkles, ExternalLink, MapPin } from "lucide-react";
 
 const highlights = [
-  "Elastic Workflows and AI-first observability narrative",
-  "Partner & field enablement for solution consultants and sellers",
-  "Grounding demos in how teams actually adopt automation",
+  "3+ years in observability; 6+ years with Kubernetes, cloud, and SaaS",
+  "Turns technical depth into demos, blogs, and videos practitioners can use",
+  "Background in geospatial data and Kubernetes security & observability",
 ];
 
 export default function JenAboutSpeakerSlide() {
@@ -26,11 +26,15 @@ export default function JenAboutSpeakerSlide() {
             <h2 className="text-5xl font-bold text-white mb-2">
               Jen Luther Thomas
             </h2>
-            <p className="text-xl mb-4" style={{ color: "var(--elastic-pink)" }}>
-              Product Marketing · Elastic
+            <p className="text-xl mb-1" style={{ color: "var(--elastic-pink)" }}>
+              Sr. Product Marketing Engineer · Elastic
+            </p>
+            <p className="text-white/40 text-xs mb-4 flex items-center gap-1.5">
+              <MapPin size={12} />
+              Vancouver, Canada · University of Southampton
             </p>
             <p className="text-white/60 text-base leading-relaxed mb-6">
-              I focus on how Elastic brings AI, Workflows, and Observability together for teams who need to move from raw signals to action — with messaging and enablement that match how practitioners actually work.
+              I specialize in tough technical problems—and in turning them into demos, blogs, and videos that land with practitioners. My background spans geospatial data and Kubernetes security & observability.
             </p>
 
             <div className="space-y-2 mb-6">
@@ -42,16 +46,28 @@ export default function JenAboutSpeakerSlide() {
               ))}
             </div>
 
-            <a
-              href="https://www.elastic.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 hover:opacity-90"
-              style={{ background: "rgba(240,78,152,0.15)", border: "1px solid rgba(240,78,152,0.35)", color: "var(--elastic-pink)" }}
-            >
-              <ExternalLink size={14} />
-              elastic.co
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://www.linkedin.com/in/jennifer-luther-thomas-59b79071/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 hover:opacity-90"
+                style={{ background: "rgba(240,78,152,0.15)", border: "1px solid rgba(240,78,152,0.35)", color: "var(--elastic-pink)" }}
+              >
+                <ExternalLink size={14} />
+                LinkedIn
+              </a>
+              <a
+                href="https://www.elastic.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 hover:opacity-90"
+                style={{ background: "rgba(0,119,204,0.2)", border: "1px solid rgba(0,119,204,0.4)", color: "var(--elastic-blue)" }}
+              >
+                <ExternalLink size={14} />
+                elastic.co
+              </a>
+            </div>
           </div>
 
           <div className="animate-fade-up-delay-2 w-72 flex-shrink-0">
