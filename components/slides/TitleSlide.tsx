@@ -1,3 +1,5 @@
+import ElasticByTheNumbers from "@/components/ElasticByTheNumbers";
+
 export default function TitleSlide() {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center relative overflow-hidden">
@@ -53,7 +55,11 @@ export default function TitleSlide() {
           </div>
         </div>
 
-        <div className="animate-fade-up-delay-5 mt-14 text-white/25 text-sm">
+        <div className="animate-fade-up-delay-4 max-w-3xl mx-auto mt-10 w-full">
+          <ElasticByTheNumbers variant="compact" />
+        </div>
+
+        <div className="animate-fade-up-delay-5 mt-8 text-white/25 text-sm">
           Press <kbd className="px-2 py-1 rounded bg-white/10 text-white/50 font-mono text-xs">→</kbd> or{" "}
           <kbd className="px-2 py-1 rounded bg-white/10 text-white/50 font-mono text-xs">Space</kbd> to advance
         </div>

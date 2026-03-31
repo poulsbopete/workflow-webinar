@@ -1,4 +1,5 @@
 import { Zap, Activity, BookOpen, Lightbulb, Heart, ArrowRight } from "lucide-react";
+import ElasticByTheNumbers from "@/components/ElasticByTheNumbers";
 
 const thinkFeelDo = [
   {
@@ -71,6 +72,10 @@ export default function SummarySlide() {
         <h2 className="animate-fade-up text-4xl font-bold text-white mb-4">
           From Alert to Resolution
         </h2>
+
+        <div className="animate-fade-up-delay-1 mb-4">
+          <ElasticByTheNumbers variant="compact" />
+        </div>
 
         <div className="animate-fade-up-delay-1 rounded-xl p-4 mb-4" style={{ background: "rgba(254,197,20,0.06)", border: "1px solid rgba(254,197,20,0.2)" }}>
           <div className="text-xs font-semibold tracking-widest uppercase mb-3 text-white/50">Goals for you</div>

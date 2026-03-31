@@ -1,4 +1,5 @@
 import { Clock, Repeat, Sparkles, Link2 } from "lucide-react";
+import ElasticByTheNumbers from "@/components/ElasticByTheNumbers";
 
 export default function ProblemFrameSlide() {
   return (
@@ -48,7 +49,11 @@ export default function ProblemFrameSlide() {
           </p>
         </div>
 
-        <div className="animate-fade-up-delay-4 mt-6 flex items-center gap-2 text-white/35 text-xs">
+        <div className="animate-fade-up-delay-4 mt-8">
+          <ElasticByTheNumbers />
+        </div>
+
+        <div className="animate-fade-up-delay-5 mt-6 flex items-center gap-2 text-white/35 text-xs">
           <Clock size={12} />
           <span>We&apos;ll start with simple building blocks, then show what&apos;s possible end-to-end.</span>
         </div>

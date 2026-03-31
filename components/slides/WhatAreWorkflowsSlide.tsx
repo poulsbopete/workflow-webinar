@@ -1,4 +1,5 @@
 import { GitBranch, Bot, ArrowRight } from "lucide-react";
+import ElasticByTheNumbers from "@/components/ElasticByTheNumbers";
 
 export default function WhatAreWorkflowsSlide() {
   return (
@@ -55,6 +56,10 @@ export default function WhatAreWorkflowsSlide() {
           <p className="text-white/65 text-sm text-center max-w-2xl leading-relaxed">
             Together: Workflows <span className="text-white/90">call agents</span> at the right moment in the flow — so you get predictable automation with AI where reasoning actually helps. For YAML, triggers, step types, and data flow, the next slides mirror Elastic&apos;s partner enablement decks.
           </p>
+        </div>
+
+        <div className="animate-fade-up-delay-4 mt-8">
+          <ElasticByTheNumbers />
         </div>
       </div>
     </div>
