@@ -21,8 +21,8 @@ import SeattleMeetupSlide from "@/components/slides/SeattleMeetupSlide";
 
 const slides = [
   { component: TitleSlide, label: "Title" },
-  { component: AboutSpeakerSlide, label: "Peter" },
   { component: JenAboutSpeakerSlide, label: "Jen" },
+  { component: AboutSpeakerSlide, label: "Peter" },
   { component: ProblemFrameSlide, label: "Why Workflows" },
   { component: AgendaSlide, label: "Agenda" },
   { component: WhatAreWorkflowsSlide, label: "Scene" },
