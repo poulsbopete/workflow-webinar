@@ -18,7 +18,7 @@ export default function JenAboutSpeakerSlide() {
 
       <div className="relative z-10 max-w-5xl w-full mx-auto">
         <div className="animate-fade-up mb-2">
-          <div className="text-white/40 text-xs font-semibold tracking-widest uppercase">Co-presenter</div>
+          <div className="text-white/40 text-xs font-semibold tracking-widest uppercase">Your speaker</div>
         </div>
 
         <div className="flex gap-10 items-start">
