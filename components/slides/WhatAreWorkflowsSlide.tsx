@@ -54,7 +54,7 @@ export default function WhatAreWorkflowsSlide() {
         <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 rounded-xl px-6 py-5" style={{ background: "rgba(0,191,179,0.08)", border: "1px solid rgba(0,191,179,0.25)" }}>
           <ArrowRight className="hidden sm:block flex-shrink-0 text-white/30" size={20} />
           <p className="text-white/65 text-sm text-center max-w-2xl leading-relaxed">
-            Together: Workflows <span className="text-white/90">call agents</span> at the right moment in the flow — so you get predictable automation with AI where reasoning actually helps. For YAML, triggers, step types, and data flow, the next slides mirror Elastic&apos;s partner enablement decks.
+            Together: Workflows <span className="text-white/90">call agents</span> at the right moment in the flow — so you get predictable automation with AI where reasoning actually helps. Next, we walk through YAML building blocks: triggers, step types, data flow, and resilience.
           </p>
         </div>
 

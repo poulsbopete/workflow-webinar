@@ -32,7 +32,7 @@ export default function WorkflowLibrarySlide() {
           Elastic Workflow library &amp; next steps
         </h2>
         <p className="animate-fade-up-delay-1 text-white/50 text-sm mb-8 max-w-2xl">
-          After the live session, use the in-product Workflow library to browse starting points — then customize YAML for your stacks. Partner enablement decks (technical + business) cover deeper workshops and positioning.
+          After the live session, use the in-product Workflow library to browse starting points — then customize YAML for your stacks. Official Elastic documentation and customer stories go deeper on workshops and positioning.
         </p>
 
         <div className="space-y-3 mb-8">
@@ -59,9 +59,7 @@ export default function WorkflowLibrarySlide() {
         </div>
 
         <div className="animate-fade-up-delay-4 rounded-xl px-5 py-4 text-xs text-white/40" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)" }}>
-          PDF references for this deck: <span className="text-white/55">Workflows Webinar</span>,{' '}
-          <span className="text-white/55">Workflows Partner Enablement Deck</span>,{' '}
-          <span className="text-white/55">Workflows Partner Technical Enablement Deck</span>.
+          For the latest feature detail and release notes, start with the Workflows guide linked above — it stays current as the product evolves.
         </div>
       </div>
     </div>

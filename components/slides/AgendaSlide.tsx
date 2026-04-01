@@ -12,8 +12,8 @@ const items = [
     icon: LayoutList,
     color: "var(--elastic-teal)",
     cardClass: "card-teal",
-    title: "Foundations (enablement slides)",
-    desc: "Triggers, step types, data flow, error handling — same narrative as partner technical enablement",
+    title: "Foundations",
+    desc: "Triggers, step types, data flow, error handling — core building blocks of Elastic Workflows",
   },
   {
     icon: GitBranch,
@@ -34,7 +34,7 @@ const items = [
     color: "var(--elastic-blue)",
     cardClass: "",
     title: "Library & resources",
-    desc: "Workflow library, docs, and partner PDF references",
+    desc: "Workflow library, docs, and official Elastic resources",
   },
   {
     icon: MonitorPlay,

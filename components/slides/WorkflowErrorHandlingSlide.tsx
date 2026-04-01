@@ -5,7 +5,7 @@ export default function WorkflowErrorHandlingSlide() {
 
       <div className="max-w-5xl w-full mx-auto">
         <div className="animate-fade-up mb-1">
-          <div className="text-white/40 text-xs font-semibold tracking-widest uppercase">Core concepts · Source: partner enablement</div>
+          <div className="text-white/40 text-xs font-semibold tracking-widest uppercase">Core concepts · Elastic Workflows</div>
         </div>
         <h2 className="animate-fade-up text-4xl font-bold text-white mb-2">
           Error handling: resilient workflows
