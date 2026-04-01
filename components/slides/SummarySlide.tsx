@@ -44,10 +44,10 @@ const takeaways = [
 ];
 
 const labHighlights = [
-  "Run Workflows in a real Kibana stack (no local install)",
-  "Alert-driven RCA-style flows with Agent Builder",
-  "SLOs via Workflows + Observability APIs",
-  "Traces, logs, metrics, and cases in one automation loop",
+  "Elastic Serverless in-browser — Observability → Workflows with example automations",
+  "Pre-built AI response workflows plus ES|QL alerts, SLOs, and investigation agent",
+  "Traces, logs, metrics, dashboards, and cases in one loop — tip: try Last 15 minutes",
+  "Inspect workflow runs and YAML in Kibana; patterns map to what we demoed live",
 ];
 
 export default function SummarySlide() {

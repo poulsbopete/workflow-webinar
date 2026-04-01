@@ -65,15 +65,14 @@ export default function SeattleMeetupSlide() {
               </div>
             </div>
             <p className="text-white/55 text-xs mb-3">
-              Guided challenges align with this deck: workflow authoring, alert-driven investigation, and{' '}
-              <span className="text-white/75">SLO lifecycle automation via Elastic Workflows</span> (create, refresh, idempotent patterns).
+              The track runs in <span className="text-white/75">Elastic Serverless</span> inside the browser — same Observability surface your audience uses. Workflows are now first-class in the lab: open <span className="text-white/75">Observability → Workflows</span> to explore what ships with the sandbox.
             </p>
             <div className="space-y-2 mb-4 flex-1">
               {[
-                "Hands-on Kibana Workflows editor and executions",
-                "Agent Builder + observability data in one flow",
-                "HTTP / API steps for SLOs and external actions",
-                "Leave with YAML you can adapt to your clusters",
+                "4 pre-configured AI response workflows (alert → investigate → case → remediate)",
+                "Kibana Workflows UI: create, run, and inspect executions — no local install",
+                "ES|QL alert rules, dashboards, SLOs, and an investigation agent wired to real signals",
+                "Patterns you can lift into your own Serverless or self-managed stacks",
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-xs text-white/55">
                   <CheckCircle2 size={12} className="flex-shrink-0" style={{ color: "var(--elastic-teal)" }} />
